@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-description: "O Projeto Modelo de Forecasting Dengue no Brasil surge como um farol de esperança, combatendo essa ameaça com a força da inteligência artificial."
+description: "O Projeto Modelo de Forecasting Dengue no Brasil surge como uma proposta para auxiliar no combante e prevenção da Dengue no Brasil "
 permalink: /
 ---
 
