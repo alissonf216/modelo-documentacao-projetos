@@ -9,7 +9,7 @@ permalink: /
 # Modelo de Forecasting Dengue no Brasil
 {: .fs-9 }
 
-O Projeto Modelo de Forecasting Dengue no Brasil surge como um farol de esperança, combatendo essa ameaça com a força da inteligência artificial.
+O Projeto Modelo de Forecasting Dengue no Brasil surge como uma proposta para auxiliar no combante e prevenção da Dengue no Brasil
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
