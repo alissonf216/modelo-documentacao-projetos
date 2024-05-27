@@ -6,7 +6,7 @@ description: "O Projeto Modelo de Forecasting Dengue no Brasil surge como um far
 permalink: /
 ---
 
-# PROJETO: Modelo de Forecasting Dengue no Brasil
+# Modelo de Forecasting Dengue no Brasil
 {: .fs-9 }
 
 O Projeto Modelo de Forecasting Dengue no Brasil surge como um farol de esperança, combatendo essa ameaça com a força da inteligência artificial.
@@ -18,7 +18,7 @@ O Projeto Modelo de Forecasting Dengue no Brasil surge como um farol de esperan�
 ---
 
 {: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
+> Essa pagina ainda está em construção usando como tema base o just-the-docs `main` então colegas Jájá vai ter algo aqui. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
 
 Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
 
