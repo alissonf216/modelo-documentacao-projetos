@@ -2,14 +2,14 @@
 layout: default
 title: Home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "O Projeto Modelo de Forecasting Dengue no Brasil surge como um farol de esperança, combatendo essa ameaça com a força da inteligência artificial."
 permalink: /
 ---
 
-# Focus on writing good documentation
+# PROJETO: Modelo de Forecasting Dengue no Brasil
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+O Projeto Modelo de Forecasting Dengue no Brasil surge como um farol de esperança, combatendo essa ameaça com a força da inteligência artificial.
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
