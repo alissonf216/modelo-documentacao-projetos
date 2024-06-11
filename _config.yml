@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Just the Docs
-description: A Jekyll theme for documentation
+title: Forecasting Dengue no Brasil
+description: O Projeto Modelo de Forecasting Dengue no Brasil surge como uma proposta para auxiliar no combante e prevenção da Dengue no Brasil
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/FranklinAurelio/Engenharia_de_software_PPGCC" # the base hostname & protocol for your site, e.g. http://example.com
 repository: FranklinAurelio/Engenharia_de_software_PPGCC # for github-metadata
@@ -132,8 +132,6 @@ liquid:
 # Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
-
-footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a> <a href=\"https://www.netlify.com/\">This site is powered by Netlify.</a>"
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
