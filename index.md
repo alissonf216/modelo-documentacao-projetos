@@ -9,7 +9,7 @@ permalink: /
 # Previsão de Dengue no Brasil
 {: .fs-9 }
 
-O projeto: Previsão de casos de Dengue no Brasil, foi desenvolvido como parte do programa de pós-graduação em Ciências da Computação da Universidade Federal de São Paulo, na disciplina de Engenharia de Software.
+O projeto desenvolvido na disciplina de Engenharia de Software do pós-graduação em Ciências da Computação da Universidade Federal de São Paulo.
 {: .fs-6 .fw-300 }
 
 [Teste agora][Teste agora]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -121,7 +121,8 @@ O detalhamento de cada grande tópico ou dos tópicos julgados necessários pode
 
 7.4. Controle de Versão
 
-#### Membros do grupo:
+
+### Membros do grupo:
 
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
