@@ -7,7 +7,7 @@ nav_order: 3
 # Modelagem
 {: .no_toc }
 
-## Modelagem
+### Modelagem
 
 A modelagem do projeto de previsão de casos de Dengue no Brasil envolve várias etapas importantes, desde a análise de séries temporais até a validação dos modelos. A seguir, detalhamos cada uma dessas etapas, acompanhadas de trechos de código utilizados no processo.
 
@@ -19,6 +19,7 @@ A análise de séries temporais é utilizada para entender a evolução dos caso
 {: .no_toc }
 ```python
 tmp_registers = registers[registers.ano > 2017]
+```
 
 
 ### Treinamento de Modelos
@@ -35,4 +36,4 @@ def forecast_model_parameters_search(data, date_column, target_column, forecast_
     best_metrics = {}
     ...
     return forecast_results, last_train, last_test, last_best_params, detailed_results, last_model, last_future, best_params, best_metrics
-
+```
