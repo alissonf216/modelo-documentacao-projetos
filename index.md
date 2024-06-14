@@ -18,7 +18,7 @@ O projeto desenvolvido na disciplina de Engenharia de Software do pós-graduaç�
 ---
 
 {: .warning }
-> Esta página ainda está em construção, utilizando como tema base o just-the-docs `main`. Em breve, haverá conteúdo disponível.
+> Esta página ainda está em construção. Em breve, haverá conteúdo disponível.
 
 
 ## Descrição do Projeto:
