@@ -1,43 +1,28 @@
 ---
 layout: default
-title: Navigation Structure
+title: Modelagem
 nav_order: 3
 ---
 
-# Navigation Structure
+# Modelagem
 {: .no_toc }
 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-- TOC
-{:toc}
-</details>
+## Modelagem
+
+A modelagem do projeto de previsão de casos de Dengue no Brasil envolve várias etapas importantes, desde a análise de séries temporais até a validação dos modelos. A seguir, detalhamos cada uma dessas etapas, acompanhadas de trechos de código utilizados no processo.
+
+### Análise de Séries Temporais
+
+A análise de séries temporais é utilizada para entender a evolução dos casos ao longo do tempo. Esta análise permite identificar padrões e tendências, essenciais para a criação de modelos preditivos precisos.
 
 ---
 
-## Main navigation
-
-The main navigation for your Just the Docs site is on the left side of the page on large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren).
-
-By default, all pages will appear as top level pages in the main nav unless a parent page is defined (see [Pages with Children](#pages-with-children)).
-
----
-
-## Ordering pages
-
-To specify a page order, you can use the `nav_order` parameter in your pages' YAML front matter.
-
-### Example (ordering pages)
+### Codigo (parte do codigo em python)
 {: .no_toc }
 
 ```yaml
 ---
-layout: default
-title: Customization
-nav_order: 4
+tmp_registers = registers[registers.ano > 2017]
 ---
 
 ```
