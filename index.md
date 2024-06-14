@@ -12,7 +12,7 @@ permalink: /
 O projeto desenvolvido na disciplina de Engenharia de Software do pós-graduação em Ciências da Computação da Universidade Federal de São Paulo.
 {: .fs-6 .fw-300 }
 
-[Teste agora][Teste agora]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Teste Agora][Teste agora]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Repositório GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
