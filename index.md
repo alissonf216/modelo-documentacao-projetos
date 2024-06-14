@@ -22,20 +22,20 @@ O projeto: Previsão de casos de Dengue no Brasil, foi desenvolvido como parte d
 
 
 ## Descrição do Projeto:
-<div style="text-align: justify;">
+
 O projeto tem como objetivo desenvolver uma ferramenta para prever o número de casos de dengue no Brasil. 
 A solução oferecerá uma interface interativa, permitindo ao usuário definir a granularidade das previsões com base em dados demográficos históricos, como logradouro, unidade federativa, gênero e faixa etária, auxiliando no planejamento e na tomada de decisões para o futuro.
 
 ## Motivação do Projeto:
-<div style="text-align: justify;">
+
 A dengue, transmitida pelo mosquito Aedes aegypti, afeta milhões de brasileiros anualmente, desafiando a saúde pública e a economia. Este projeto busca combater a dengue através de uma ferramenta inovadora que prevê novos casos com precisão, utilizando técnicas avançadas de forecasting e análise de dados.
-<div style="text-align: justify;">
+
 A solução oferecerá uma interface intuitiva, permitindo previsões detalhadas com base em dados demográficos como logradouro, unidade federativa, gênero e faixa etária. Esta precisão ajudará a direcionar recursos e ações de combate de forma eficaz.
-<div style="text-align: justify;">
+
 Esperamos que a ferramenta seja um recurso valioso para pesquisadores, profissionais de saúde e gestores públicos, auxiliando na redução da incidência de dengue e na preservação de vidas ao antecipar surtos e entender padrões de propagação da doença.
 
 ## Estrutura Analítica do Projeto
-<div style="text-align: justify;">
+
 A Estrutura Analítica do Projeto é uma decomposição hierárquica do trabalho a que foi executado pela equipe para atingir os objetivos do projeto e criar os entregáveis necessários. Ela divide o projeto em componentes menores e mais gerenciáveis, facilitando o planejamento, a execução e o controle das atividades. Abaixo estão listadas as principais etapas e tarefas deste projeto, detalhando os recursos e o esforço estimado para cada uma delas.
 
 {: .note }
