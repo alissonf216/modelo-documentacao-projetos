@@ -7,10 +7,6 @@ nav_order: 2
 # Estrutura do Projeto
 {: .no_toc }
 
-Estrutura do projeto.
-{: .fs-6 .fw-300 }
-
-
 ### Estrutura do Projeto
 
 O projeto de previsão de casos de Dengue no Brasil foi desenvolvido utilizando diversas tecnologias, frameworks e bases de dados. A seguir, são apresentados os requisitos e componentes do projeto.
