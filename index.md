@@ -9,7 +9,7 @@ permalink: /
 # Previsão de Dengue no Brasil
 {: .fs-9 }
 
-O projeto desenvolvido na disciplina de Engenharia de Software do pós-graduação em Ciências da Computação da Universidade Federal de São Paulo.
+Projeto desenvolvido para disciplina de Engenharia de Software do pós-graduação em Ciências da Computação da Universidade Federal de São Paulo.
 {: .fs-6 .fw-300 }
 
 [Teste Agora][Teste agora]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
