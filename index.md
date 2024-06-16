@@ -140,7 +140,7 @@ O detalhamento de cada grande tópico ou dos tópicos julgados necessários pode
 [source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
 [Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
 [Just the Docs]: https://just-the-docs.com
-[Teste agora]: https://github.com/FranklinAurelio/Engenharia_de_software_PPGCC
+[Teste agora]: https://d3vosyb8hryrjc.cloudfront.net/#/home/
 [Just the Docs repo]: https://github.com/FranklinAurelio/Engenharia_de_software_PPGCC
 [Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
