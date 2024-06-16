@@ -4,7 +4,7 @@ title: BACK-END
 nav_order: 4
 ---
 
-### Tópico: Backend da Solução
+### Backend da Solução
 
 O backend da solução apresentada no diagrama utiliza uma infraestrutura na nuvem, mais especificamente na AWS (Amazon Web Services), para garantir escalabilidade, segurança e alta disponibilidade. A seguir, descreveremos cada componente do backend e seu papel dentro do fluxo de trabalho.
 
