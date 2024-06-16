@@ -7,7 +7,7 @@ nav_order: 7
 # Frontend da Solução
 {: .no_toc }
 
-### Tópico: Frontend da Solução
+### Frontend da Solução
 
 O frontend da solução é crucial para a interação do usuário com o sistema que prevê casos de dengue no Brasil. Ele foi desenvolvido para ser intuitivo e responsivo, utilizando tecnologias modernas que garantem uma excelente experiência de usuário.
 
