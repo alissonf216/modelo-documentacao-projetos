@@ -32,38 +32,38 @@ O frontend da solução é crucial para a interação do usuário com o sistema 
 #### Código (parte do código)
 {: .no_toc }
 ```python
+import 'package:dengue_dashboard/core/data_persist_service.dart';
+import 'package:dengue_dashboard/modules/constants/region_const.dart';
+import 'package:flutter/material.dart';
 
+class DropdownMenuRegion extends StatefulWidget {
+  const DropdownMenuRegion({super.key});
 
-#### Código (parte do código em Python)
-{: .no_toc }
-```python
+  @override
+  State<DropdownMenuRegion> createState() => _DropdownMenuRegionState();
+}
 
-n_groups = forecast_dengue[group_columns].drop_duplicates().shape[0]
-n_cols = 3
-n_rows = (n_groups + n_cols - 1) // n_cols 
+class _DropdownMenuRegionState extends State<DropdownMenuRegion> {
+  String dropdownValue = listRegion.first;
 
-fig, axes = plt.subplots(n_rows, n_cols, figsize=(18, 6 * n_rows), sharex=True)
-axes = axes.flatten()  
-
-for idx, (name, group) in enumerate(forecast_dengue.groupby(group_columns)):
-    if idx < len(axes): 
-        ax = axes[idx]
-
-        ax.plot(group['mes_ano'], group['previsao_pacientes'], color='orange', label='Previsão de Pacientes')
-        ax.fill_between(group['mes_ano'], group['previsao_pacientes'], group['previsao_maxima_pacientes'], color='orange', alpha=0.3, label='Máximo de Pacientes')
-
-        ax.set_title(f'Previsão para: {", ".join(map(str, name))}')
-        ax.set_xlabel('Data')
-        ax.set_ylabel('Número de Pacientes')
-        ax.legend()
-
-for i in range(idx + 1, len(axes)):
-    axes[i].axis('off')
-
-plt.tight_layout()
-plt.show()
-
-```
+  @override
+  Widget build(BuildContext context) {
+    return DropdownMenu<String>(
+      label: const Text('Região'),
+      initialSelection: listRegion.first,
+      onSelected: (String? value) async {
+        setState(() {
+          dropdownValue = value!;
+        });
+        await insertData(3, 'regiao', value);
+      },
+      dropdownMenuEntries:
+          listRegion.map<DropdownMenuEntry<String>>((String value) {
+        return DropdownMenuEntry<String>(value: value, label: value);
+      }).toList(),
+    );
+  }
+}
 ```
 
 
