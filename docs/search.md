@@ -1,182 +1,92 @@
 ---
 layout: default
-title: Search
+title: Frontend da Solução
 nav_order: 7
 ---
 
-# Search
+# Frontend da Solução
 {: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
+### Tópico: Frontend da Solução
 
-1. TOC
-{:toc}
+O frontend da solução é crucial para a interação do usuário com o sistema que prevê casos de dengue no Brasil. Ele foi desenvolvido para ser intuitivo e responsivo, utilizando tecnologias modernas que garantem uma excelente experiência de usuário.
 
----
+#### Tecnologias Utilizadas
 
-Just the Docs uses [lunr.js](https://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates.
-All search results are shown in an auto-complete style interface (there is no search results page).
-By default, all generated HTML pages are indexed using the following data points:
+- **Flutter**: Utilizado para o desenvolvimento de aplicações móveis multiplataforma, permitindo a criação de interfaces nativas para Android e iOS a partir de uma única base de código.
 
-- Page title
-- Page content
-- Page URL
+- **Dart**: Linguagem de programação que acompanha o Flutter, utilizada para desenvolver a lógica do aplicativo.
 
-## Enable search in configuration
+- **JavaScript**: Empregado para funcionalidades adicionais e interações dinâmicas no frontend.
 
-In your site's `_config.yml`, enable search:
+#### Componentes do Frontend
 
-```yaml
-# Enable or disable the site search
-# Supports true (default) or false
-search_enabled: true
-```
+- **Interface do Usuário (UI)**: A UI, desenvolvida com Flutter, é projetada para ser responsiva e intuitiva, facilitando a navegação do usuário através das diversas funcionalidades do aplicativo.
 
-### Search granularity
+- **Integração com API**: O frontend se comunica com o backend através de chamadas à API, definidas no API Gateway, para operações como login, visualização de dados e envio de informações.
 
-Pages are split into sections that can be searched individually.
-The sections are defined by the headings on the page.
-Each section is displayed in a separate search result.
+- **Gerenciamento de Estado**: É feito de forma eficiente para garantir a sincronização de dados entre a UI e o backend, proporcionando uma experiência de usuário consistente.
 
-```yaml
-# Split pages into sections that can be searched individually
-# Supports 1 - 6, default: 2
-search.heading_level: 2
-```
 
-### Search previews
 
-A search result can contain previews that show where the search words are found in the specific section.
-
-```yaml
-# Maximum amount of previews per search result
-# Default: 3
-search.previews: 3
-
-# Maximum amount of words to display before a matched word in the preview
-# Default: 5
-search.preview_words_before: 5
-
-# Maximum amount of words to display after a matched word in the preview
-# Default: 10
-search.preview_words_after: 10
-```
-
-### Search tokenizer
-
-The default is for hyphens to separate tokens in search terms:
-`gem-based` is equivalent to `gem based`, matching either word.
-To allow search for hyphenated words:
-
-```yaml
-# Set the search token separator
-# Default: /[\s\-/]+/
-# Example: enable support for hyphenated search words
-search.tokenizer_separator: /[\s/]+/
-```
-
-### Display URL in search results
-
-```yaml
-# Display the relative url in search results
-# Supports true (default) or false
-search.rel_url: false
-```
-
-### Display search button
-
-The search button displays in the bottom right corner of the screen and triggers the search input when clicked.
-
-```yaml
-# Enable or disable the search button that appears in the bottom right corner of every page
-# Supports true or false (default)
-search.button: true
-```
-
-### Focus search bar with a keyboard shortcut
-
-Just the Docs supports focusing the search bar input with a keyboard shortcut. After setting the `search.focus_shortcut_key` config item key, users who press <kbd>Ctrl</kbd> + `search.focus_shortcut_key` (or on macOS, <kbd>Command</kbd> + `search.focus_shortcut_key`) will focus the search bar.
-
-Note that this feature is **disabled by default**. `search.focus_shortcut_key` should be a [valid value from `KeyboardEvent.key`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key); this involves all ASCII alphanumeric values, as well as modifier keys.
-
-For example,
-
-```yaml
-search:
-    focus_shortcut_key: 'k'
-```
-
-Will make <kbd>Ctrl</kbd> + <kbd>K</kbd> focus the search bar for Windows users (and <kbd>Command</kbd> + <kbd>K</kbd> on macOS).
-
-## Hiding pages from search
-
-Sometimes you might have a page that you don't want to be indexed for the search nor to show up in search results, e.g., a 404 page.
-To exclude a page from search, add the `search_exclude: true` parameter to the page's YAML front matter:
-
-#### Example
-
+#### Código (parte do código)
 {: .no_toc }
+```python
 
-```yaml
----
-layout: default
-title: Page not found
-nav_exclude: true
-search_exclude: true
----
+
+#### Código (parte do código em Python)
+{: .no_toc }
+```python
+
+n_groups = forecast_dengue[group_columns].drop_duplicates().shape[0]
+n_cols = 3
+n_rows = (n_groups + n_cols - 1) // n_cols 
+
+fig, axes = plt.subplots(n_rows, n_cols, figsize=(18, 6 * n_rows), sharex=True)
+axes = axes.flatten()  
+
+for idx, (name, group) in enumerate(forecast_dengue.groupby(group_columns)):
+    if idx < len(axes): 
+        ax = axes[idx]
+
+        ax.plot(group['mes_ano'], group['previsao_pacientes'], color='orange', label='Previsão de Pacientes')
+        ax.fill_between(group['mes_ano'], group['previsao_pacientes'], group['previsao_maxima_pacientes'], color='orange', alpha=0.3, label='Máximo de Pacientes')
+
+        ax.set_title(f'Previsão para: {", ".join(map(str, name))}')
+        ax.set_xlabel('Data')
+        ax.set_ylabel('Número de Pacientes')
+        ax.legend()
+
+for i in range(idx + 1, len(axes)):
+    axes[i].axis('off')
+
+plt.tight_layout()
+plt.show()
 
 ```
-
-## Generate search index when used as a gem
-
-If you use Just the Docs as a remote theme, you do not need the following steps.
-
-If you use the theme as a gem, you must initialize the search by running this `rake` command that comes with `just-the-docs`:
-
-```bash
-$ bundle exec just-the-docs rake search:init
 ```
 
-This command creates the `assets/js/zzzz-search-data.json` file that Jekyll uses to create your search index.
-Alternatively, you can create the file manually with [this content]({{ site.github.repository_url }}/blob/main/assets/js/zzzz-search-data.json).
 
-## Custom content for search index
-{: .d-inline-block }
+#### Fluxo de Trabalho
 
-New (v0.4.0)
-{: .label .label-green }
+1. **Inicialização**: O aplicativo é iniciado e carrega a interface principal. Flutter assegura que a UI seja responsiva e se adapte a diferentes tamanhos de tela.
 
-Advanced
-{: .label .label-yellow }
+2. **Autenticação**: Usuários autenticam-se no sistema através de uma interface de login. Credenciais são verificadas por meio de chamadas à API no backend.
 
-By default, the search feature indexes a page's `.content`, `.title`, and *some* headers within the `.content`. Other data (e.g. front matter, files in `_data` and `assets`) is not indexed. Users can customize what is indexed.
+3. **Interação com Dados**: Após a autenticação, os usuários podem acessar funcionalidades como visualização de dados, relatórios e gráficos. Essas interações são geridas pelo backend via chamadas de API.
 
-{: .warning }
-> Customizing search indices is an advanced feature that requires Javascript and Liquid knowledge.
+4. **Atualização de Dados**: Usuários podem enviar novas informações ou atualizar dados existentes. Essas operações são realizadas via chamadas à API, garantindo que os dados no backend estejam sempre atualizados.
 
-1. When Just the Docs is a local or gem theme, ensure `assets/js/zzzz-search-data.json` is up-to-date with [Generate search index when used as a gem](#generate-search-index-when-used-as-a-gem).
-2. Add a new file named `_includes/lunr/custom-data.json`. Insert custom Liquid code that reads your data (e.g. the page object at `include.page`) then generates custom Javascript fields that hold the custom data you want to index. Verify these fields in the generated `assets/js/search-data.json`.
-3. Add a new file named `_includes/lunr/custom-index.js`. Insert custom Javascript code that reads your custom Javascript fields and inserts them into the search index. You may want to inspect `assets/js/just-the-docs.js` to better understand the code.
+5. **Notificações e Feedback**: O frontend fornece feedback em tempo real para o usuário, como confirmações de operações bem-sucedidas ou notificações de erros, utilizando mecanismos de UI do Flutter.
 
-#### Example
+#### Benefícios
 
-This example adds front matter `usage` and `examples` fields to the search index.
+- **Desenvolvimento Multiplataforma**: Flutter permite o desenvolvimento de uma única base de código para múltiplas plataformas, reduzindo o tempo e esforço de desenvolvimento.
 
-`_includes/lunr/custom-data.json` custom code reads the page `usage` and `examples` fields, normalizes the text, and writes the text to custom Javascript `myusage` and `myexamples` fields. Javascript fields are similar yet [not the same as JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#javascript_and_json_differences). `jsonify` will probably work for most scenarios.
+- **Experiência de Usuário Consistente**: Interface intuitiva e responsiva que garante uma experiência agradável para o usuário.
 
-{% raw %}
-```liquid
-{%- capture newline %}
-{% endcapture -%}
-"myusage": {{ include.page.usage | markdownify | replace:newline,' ' | strip_html | normalize_whitespace | strip | jsonify }},
-"myexamples": {{ include.page.examples | markdownify | replace:newline,' ' | strip_html | normalize_whitespace | strip | jsonify }},
-```
-{% endraw %}
+- **Integração Eficiente com Backend**: Comunicação fluida entre frontend e backend através de APIs bem definidas, garantindo que os dados estejam sempre sincronizados e atualizados.
 
-`_includes/lunr/custom-index.js` custom code is inserted into the Javascript loop of `assets/js/just-the-docs.js`. All custom Javascript fields are accessed as fields of `docs[i]` such as `docs[i].myusage`. Finally, append your custom fields on to the already existing `docs[i].content`.
+Essa abordagem proporciona uma solução de frontend robusta e eficiente, garantindo que os usuários tenham uma experiência de alta qualidade ao interagir com o sistema, especialmente ao prever casos de dengue no Brasil.
 
-```javascript
-const content_to_merge = [docs[i].content, docs[i].myusage, docs[i].myexamples];
-docs[i].content = content_to_merge.join(' ');
-```
+Para mais detalhes, você pode acessar o repositório do projeto no [GitHub](https://github.com/FranklinAurelio/Engenharia_de_software_PPGCC).
