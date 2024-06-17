@@ -16,10 +16,10 @@ Projeto desenvolvido para disciplina de Engenharia de Software do pós-graduaç�
 [Repositório GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
-
+<!--
 {: .warning }
 > Esta página ainda está em construção. Em breve, haverá conteúdo disponível.
-
+-->
 
 ## Descrição do Projeto:
 
