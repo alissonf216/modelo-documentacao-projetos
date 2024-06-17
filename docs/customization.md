@@ -10,6 +10,8 @@ nav_order: 6
 
 O backend da solução apresentada no diagrama utiliza uma infraestrutura na nuvem, mais especificamente na AWS (Amazon Web Services), para garantir escalabilidade, segurança e alta disponibilidade. A seguir, descreveremos cada componente do backend e seu papel dentro do fluxo de trabalho.
 
+![](../../assets/images/projeto_eng.jpg)
+
 #### Armazenamento e Distribuição de Conteúdo
 
 - **Amazon S3 (Simple Storage Service)**: Serve como o armazenamento centralizado para os arquivos e dados necessários. O conteúdo do projeto é versionado e mantido de forma segura no S3. Arquivos como configurações, dados estáticos e logs podem ser armazenados aqui.
