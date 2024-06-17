@@ -11,7 +11,7 @@ nav_order: 2
 
 O projeto de previsão de casos de Dengue no Brasil foi desenvolvido utilizando diversas tecnologias, frameworks e bases de dados. A seguir, são apresentados os requisitos e componentes do projeto.
 
-![Diagrama_projs](https://github.com/alissonf216/modelo-documentacao-projetos/blob/main/assets/images/projeto_eng.png)
+![](../../assets/images/projeto_eng.png)
 
 #### Repositório e Gestão de Tarefas
 
