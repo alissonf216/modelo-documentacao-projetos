@@ -12,6 +12,7 @@ Esta página contém um resumo detalhado das atividades desenvolvidas por cada m
 
 #### Flavia Barcellos
 
+
 - **Busca e Coleta de Dados**: Realização da busca e coleta de dados brutos oficiais sobre casos de dengue no Brasil, utilizando fontes governamentais e institucionais oficiais.
 - **Tratamento e Pré-processamento de Dados**: Execução do tratamento e pré-processamento dos dados coletados, garantindo a limpeza, normalização e preparação dos dados para análise subsequente.
 - **Análise Completa de Dados**: Condução de uma análise detalhada dos dados, identificando padrões, tendências e insights relevantes para a compreensão da incidência de dengue no país.
@@ -19,8 +20,10 @@ Esta página contém um resumo detalhado das atividades desenvolvidas por cada m
 - **Treinamento do Modelo de Inteligência Artificial**: Treinamento de modelos de inteligência artificial utilizando técnicas avançadas de machine learning para prever a ocorrência de novos casos de dengue.
 - **Validação do Modelo de Inteligência Artificial**: Validação dos modelos desenvolvidos através de técnicas de avaliação e métricas de performance, garantindo a precisão e a eficácia das previsões.
 - **Apresentação**: Apresentação dos resultados e conclusões do projeto, elaborando relatórios e apresentações para comunicar as descobertas e recomendações aos stakeholders do projeto.
+  
 
 #### Victor Moraes
+
 
 - **Planejamento da Arquitetura da Solução**: Planejar a arquitetura da solução, considerando o ambiente de computação em nuvem e os serviços necessários.
 - **Script de Infraestrutura como Código**: Elaborar o script de infraestrutura como código (IaC) em Terraform para provisionamento dos serviços na AWS.
@@ -28,7 +31,9 @@ Esta página contém um resumo detalhado das atividades desenvolvidas por cada m
 - **Versionamento no GitHub**: Versionar o projeto no repositório GitHub.
 - **Testes Integrados de Ponta a Ponta**: Realizar testes integrados de ponta a ponta.
 
+
 #### Franklin Aurelio
+
 
 - **Estudo de Usabilidade e Acessibilidade**: Foco em usabilidade e acessibilidade para aplicações web.
 - **Estilização dos Componentes Visuais**: Trabalho na estilização dos componentes visuais da aplicação.
@@ -42,7 +47,9 @@ Esta página contém um resumo detalhado das atividades desenvolvidas por cada m
 - **Controle de Estados e Versionamento**: Implementação do controle de estados e versionamento da aplicação.
 - **Geração de Build para Publicação**: Geração de build para publicação no host.
 
+
 #### Alisson Franclin
+
 
 - **Elaboração Completa da Documentação**: Criação de documentação detalhada do projeto, cobrindo aspectos técnicos e operacionais.
 - **Documentação de Código**: Responsável pela documentação de todos os códigos desenvolvidos.
@@ -54,4 +61,15 @@ Esta página contém um resumo detalhado das atividades desenvolvidas por cada m
 - **Apoio à Governança e Compliance**: Garantia de compliance com normas e regulamentações.
 - **Promoção de Boas Práticas**: Promoção de boas práticas de desenvolvimento e operação.
 - **Facilitação da Manutenção e Escalabilidade**: Facilitação da manutenção e expansão futura do sistema.
+  
+
+### Membros do grupo:
+
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"></a>
+  </li>
+{% endfor %}
+</ul>
 
